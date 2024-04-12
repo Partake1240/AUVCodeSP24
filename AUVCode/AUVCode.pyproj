@@ -22,6 +22,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AUVCode.py" />
+    <Compile Include="bar02.py" />
+    <Compile Include="controller.py" />
+    <Compile Include="deadmansswitch.py" />
+    <Compile Include="initialize.py" />
+    <Compile Include="ms5837.py" />
+    <Compile Include="thrusters.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
