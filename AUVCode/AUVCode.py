@@ -1,13 +1,16 @@
 
 import smbus2 as smbus
+import os
+import asyncio
 import time
+import serial
 import numpy as np
 import RPi.GPIO as GPIO  # Import GPIO library for Raspberry Pi
 import threading
 import ms5837
-import Controller
-import Bar02
-import DeadmansSwitch
+import controller
+import car02
+import deadmansSwitch
 from initialize import *
 from thrusters import control_thrusters
 
