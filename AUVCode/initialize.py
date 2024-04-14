@@ -1,18 +1,17 @@
- def Initialize()
- 
-     # Initialize PID parameters and setpoint
-        Kp = 0.5
-        Ki = 0.1
-        Kd = 0.2
+import RPi.GPIO as GPIO  # Import GPIO library for Raspberry Pi
+from thrusters import pw_to_dc
 
+
+def Initialize() 
+  
     # Define GPIO pins for controlling ESCs (adjust pin numbers as needed)
     #CW pins should be the first 2, CCW pins should be last 2
-    ESC_PWM_PINS_CW = [18, 12]
-    ESC_PWM_PINS_CCW = [13,19]
 
-#This outputs a duty cycle for the ESCs based on the requested pulse width
-def pw_to_dc(pulse_width)
-        return (pulse_width/10^6)*100*frequency
+    ESC_PWM_PINS_CW = [18, 12]
+    
+    ESC_PWM_PINS_CCW = [13, 19]
+
+
 
 # Initialize GPIO
 def init_gpio():

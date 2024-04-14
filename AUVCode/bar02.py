@@ -1,3 +1,6 @@
+import ms5837
+import smbus2 as smbus
+
 #This will create a class that initializes and reads the Bar02 Pressure Sensor
 class Bar02:
     def __init__(self,fluid_density):

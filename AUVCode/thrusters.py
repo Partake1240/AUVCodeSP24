@@ -1,3 +1,7 @@
+#This outputs a duty cycle for the ESCs based on the requested pulse width
+def pw_to_dc(pulse_width)
+        return (pulse_width/10^6)*100*frequency
+
 def control_thrusters(pid_out):
     for i, pin in enumerate(ESC_PWM_PINS):
         

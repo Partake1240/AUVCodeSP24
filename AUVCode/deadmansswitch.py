@@ -1,3 +1,5 @@
+import serial
+
 # Define a Deadman's switch class
 class DeadmansSwitch:
     def __init__(self, max_checks):
